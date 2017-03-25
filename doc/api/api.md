@@ -99,4 +99,31 @@ type: 搜索的类型(用户是1002)
 
 ### 返回结果
 
-待补充
+	http://127.0.0.1:8888/user/109284159
+	{
+		songsall: [
+			{
+		      "playTime": 217779,
+		      "authors_info": [
+		        {
+		          "author_name": "Charlie Puth",
+		          "author_link": "http://music.163.com/artist?id=90331"
+		        },
+		        {
+		          "author_name": "Selena Gomez",
+		          "author_link": "http://music.163.com/artist?id=140196"
+		        }
+		      ]
+    		},
+			{
+		      "playTime": 150824,
+		      "authors_info": [
+		        {
+		          "author_name": "花粥",
+		          "author_link": "http://music.163.com/artist?id=8103"
+		    	}
+			  ],
+ 			}
+		]
+		collectlistCount: 19
+	}
