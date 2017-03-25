@@ -35,7 +35,7 @@ react框架组件化开发，主要是搜索、搜索结果分页、图表数据
 
 ### 后端
 
-基于tornado的一个web服务器，提供restful API，爬虫使用scrapy框架，向前端返回json数据。
+基于tornado的一个web服务器，提供restful API，爬虫使用Python三方库实现，向前端返回json数据。
 
 ## 计划
 
