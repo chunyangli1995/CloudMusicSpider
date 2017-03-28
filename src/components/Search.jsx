@@ -1,7 +1,7 @@
-import React, { Component, PropTypes } from 'react'
-import style from '../css/SearchUser.css'
+import React from 'react'
+import style from '../css/Search.css'
 
-export  default class SearchUser extends Component {
+export  default class Search extends React.Component {
 	render() {
 		return (
 			<div className='searchUser'>
