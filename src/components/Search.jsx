@@ -12,21 +12,21 @@ export  default class Search extends React.Component {
   	}
 	
 	handleClick() {
-    	this.props.history.push(
-    		{ 
-    			pathname: '#searchresult', 
-    			state: { search_content: this.state.search_content } 
-    		}
-    	);
-  	}
+		this.props.history.push(
+			{
+				pathname: '#searchresult',
+				state: { search_content: this.state.search_content }
+			}
+		);
+	}
 	
 	render() {
 		return (
 			<div className='searchUser'>
 				<input type='text' onChange={
 					(event) => {
-                    	this.state.search_content = event.target.value;
-                	}
+						this.state.search_content = event.target.value;
+					}
 				} placeholder={this.state.search_content} ref='input' />
 				<button onClick = {this.handleClick}>
 					Search
