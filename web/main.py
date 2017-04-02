@@ -12,6 +12,7 @@ def start_server():
         (r"/user/(\w*)", UserHandler)
     ])
 
+
 if __name__ == "__main__":
     app = start_server()
     app.listen(8888)
