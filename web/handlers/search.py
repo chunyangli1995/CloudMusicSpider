@@ -9,7 +9,7 @@ SEARCH_API_ADDR_OF_CLOUD_MUSIC = "http://music.163.com/api/search/pc"
 
 
 class SearchHandler(tornado.web.RequestHandler):
-    
+
     def get(self):
         type = int(self.get_argument("type"))
         s = self.get_argument("s")

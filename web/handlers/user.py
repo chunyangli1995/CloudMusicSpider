@@ -37,10 +37,12 @@ class UserHandler(tornado.web.RequestHandler):
             song_url = song_li.find('a')['href']
             song_id = song_url[song_url.rindex('=')+1:]
             song_ids.append(int(song_id))
-            authors_a = song_li.find_all('div')[1].find('span').span.find_all('a')
+            authors_a = song_li.find_all('div')[1].find(
+                'span').span.find_all('a')
             authors_info = [
                             {
-                                'author_link': CLOUDMUSIC_DOMAIN.format(author_a['href']),
+                                'author_link': CLOUDMUSIC_DOMAIN.format(
+                                    author_a['href']),
                                 'author_name': author_a.get_text()
                             }
                             for author_a in authors_a
