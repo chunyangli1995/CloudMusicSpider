@@ -1,5 +1,14 @@
 > 使用python的基本爬虫类库，并用selenium框架模拟浏览器内核，抓取一些我们期待获得的数据。主要是两个接口，第一个接口直接通过网易云音乐的api就可以获得，第二个接口中部分字段需要我们使用selenium去模拟浏览器行为，以便抓取。
 
+## 启动服务器的几个步骤
+
+    1. cd buildout
+    2. bin/buildout 安装包依赖
+	3. cd ..
+	4. 下载chromedriver 并配置到环境变量里
+	5. python web/main.py 启动服务器
+
+
 ##  GET /search
 
 ### description
