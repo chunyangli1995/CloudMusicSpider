@@ -22,4 +22,5 @@ class SearchHandler(tornado.web.RequestHandler):
             "type": type
         }
         res = requests.post(SEARCH_API_ADDR_OF_CLOUD_MUSIC, params=payloads)
+        self.set_header("Access-Control-Allow-Origin", "*")
         self.write(res.content)
